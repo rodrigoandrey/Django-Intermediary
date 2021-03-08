@@ -10,6 +10,7 @@
     <div class="container" id="home-div">
         <div class="row" id="home-row">
             <div class="col-sm-6">
+                {% if produtos %}
                 <h1>Produtos</h1>
                 <hr>
                 <div class="table-responsive">
@@ -50,6 +51,9 @@
                       </table>
                     <hr>
                 </div>
+                {% else %}
+                    <h1>Não há Produtos Cadastrados.</h1>
+                {% endif %}
             </div>
         </div>
     </div>
