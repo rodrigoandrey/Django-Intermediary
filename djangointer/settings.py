@@ -124,3 +124,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+# E-mail configuration backend.
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# E-mail configuration production.
+'''
+EMAIL_HOST = ''
+EMAIL_HOST_USER = 'no-reply@seudominio.com.br'
+EMAIL_PORT = Port
+EMAIL_USER_TSL = True
+EMAIL_HOST_PASSWORD = 'your password'
+'''
